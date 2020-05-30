@@ -5,6 +5,7 @@
 
 body {
     background-color: #FFF0E1;
+    color: #6493C6;
 }
 
 .content {
@@ -14,4 +15,98 @@ body {
 
 .col {
     padding: 0;
+}
+
+.week, .numbers {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.week li, .numbers li {
+    list-style: none;
+}
+
+.numbers li:hover {
+    text-decoration: underline;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.info h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.info h1 {
+    width: 206px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #8D4D80;
+    border-bottom: 1px solid #9A9A9A;
+}
+
+.info h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #6493C6;
+}
+
+.info span {
+    color: #8D4D80;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 245px;
+    margin-left: 75px;
+}
+
+.btns button {
+    margin-bottom: 24.93px;
+
+}
+
+.symptoms {
+    margin-top: 38px;
+    background: #EE78A0;
+    border-radius: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #FFFFFF;
+    padding: 14px 11.43px;
+    border-color: #EE78A0;
+}
+
+.period {
+    border: 3px solid #EE78A0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: -0.408px;
+    color: #EE78A0;
+    padding: 14px 11.43px;
 }
