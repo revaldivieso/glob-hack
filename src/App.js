@@ -6,14 +6,12 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import { AuthProvider } from './Components/Auth';
-import { Welcome } from './Components/Welcome';
 
 function App() {
   return (
     <AuthProvider>
       <Router>
         <div>
-          <Route exact path='/welcome' component={Welcome} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           <Route exact path='/' component={Home} />

@@ -6,6 +6,7 @@ import { AuthContext } from './Auth';
 import { Container } from 'react-bootstrap';
 import logo from '../Asset/Images/logo.png';
 import logo2 from '../Asset/Images/logo2.png';
+import google from '../Asset/Images/icons/google.png';
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(
@@ -35,7 +36,6 @@ const Login = ({ history }) => {
       <form className='row' onSubmit={handleLogin}>
         <div className='col-md-12'>
           <label className='label'>
-            Email
             <input
               className='form-control'
               name='email'
@@ -44,7 +44,6 @@ const Login = ({ history }) => {
             />
           </label>
           <label className='label'>
-            Password
             <input
               className='form-control'
               name='password'
@@ -59,12 +58,13 @@ const Login = ({ history }) => {
 
           <button class='register_google' to='/' type='submit'>
             <Link to='/'>Ingresa con Google</Link>
+            <img src={google} className='google-icon' alt='logo de google' />
           </button>
         </div>
         {/* BOTON DE REGISTRO*/}
         <h6>
           ¿No tienes cuenta?{' '}
-          <button className='register' type='submit' to='/register'>
+          <button className='return_login' type='submit' to='/register'>
             <Link to='/register'>Registrarte</Link>
           </button>{' '}
         </h6>
