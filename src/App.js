@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import { BrowserRoute as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
@@ -11,9 +11,9 @@ function App() {
     <AuthProvider>
       <Router>
         <div>
-          <Route exact path='/' component={Home} />
           <Route exact path='/login' component={Login} />
           <Route exact path='/register' component={Register} />
+          <Route exact path='/' component={Home} />
         </div>
       </Router>
     </AuthProvider>

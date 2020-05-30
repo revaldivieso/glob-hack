@@ -1,6 +1,6 @@
-//import firebase from 'firebase/app';
-import * as firebase from 'firebase/app';
-import 'firebase/auth';
+import * as firebase from 'firebase';
+//import * as firebase from 'firebase/app';
+//import 'firebase/auth';
 
 let firebaseConfig = {
   apiKey: 'AIzaSyCJhad0E8nAmwp1huC9GNPKtdIeJPmvfzc',
