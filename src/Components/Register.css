@@ -2,6 +2,16 @@
     background-color: #FFF0E1;
 }
 
+.logo,
+.logo2 {
+    display: block;
+}
+
+.logo {
+    justify-content: center;
+    align-items: center;
+}
+
 .register {
     display: flex;
     text-align: center;

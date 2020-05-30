@@ -5,6 +5,7 @@ import db from './firebase';
 import { AuthContext } from './Auth';
 import { Container } from 'react-bootstrap';
 import logo from '../Asset/Images/logo.png';
+import logo2 from '../Asset/Images/logo2.png';
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(
@@ -29,8 +30,8 @@ const Login = ({ history }) => {
     <Container>
       <header className='app_header'>
         <img src={logo} className='logo' alt='logo' />
+        <img src={logo2} className='logo2' alt='logo' />
       </header>
-      <h5>Iniciar Sesión</h5>
       <form className='row' onSubmit={handleLogin}>
         <div className='col-md-12'>
           <label className='label'>
