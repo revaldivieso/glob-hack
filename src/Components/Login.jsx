@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 import db from './firebase';
 import { AuthContext } from './Auth';
 import { Container } from 'react-bootstrap';
+import { googleLogin } from './google-auth';
 import logo from '../Asset/Images/logo.png';
 import logo2 from '../Asset/Images/logo2.png';
-import google from '../Asset/Images/icons/google.png';
+import google from '../Asset/Images/icon/google.png';
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(
@@ -40,7 +41,7 @@ const Login = ({ history }) => {
               className='form-control'
               name='email'
               type='email'
-              placeholder='Email'
+              placeholder='Correo electrónico'
             />
           </label>
           <label className='label'>
@@ -48,7 +49,7 @@ const Login = ({ history }) => {
               className='form-control'
               name='password'
               type='password'
-              placeholder='Password'
+              placeholder='Contraseña'
             />
           </label>
           <button class='login' type='submit'>
@@ -56,8 +57,8 @@ const Login = ({ history }) => {
           </button>
           {/* BOTON DE INGRESO CON GOOGLE*/}
 
-          <button class='register_google' to='/' type='submit'>
-            <Link to='/'>Ingresa con Google</Link>
+          <button onClick={() => googleLogin()} class='register_google'>
+            <span>Ingresa con Google</span>
             <img src={google} className='google-icon' alt='logo de google' />
           </button>
         </div>
