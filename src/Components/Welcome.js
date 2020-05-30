@@ -1,10 +1,16 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Navigation } from './Navigation';
 
 export const Welcome = () => {
     return (
-      <div>
-        <h2>Welcome</h2>
-      </div>
-  
+        <Container fluid>
+        <Row>
+        <Col>
+        <Navigation />
+
+        </Col>
+        </Row>
+        </Container>
     )
   }
