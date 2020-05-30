@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import { withRouter } from 'react-router';
+import { Link } from 'react-router-dom';
 import db from './firebase';
 import './Register.css';
 
@@ -32,6 +33,14 @@ const Register = ({ history }) => {
           <input name='password' type='password' placeholder='Password' />
         </label>
         <button type='submit'>Registrarse</button>
+        {/* BOTON DE VOLVER A LOGIN*/}
+
+        <h6>
+          Si ya estas registrado ingresa{' '}
+          <button class='return_login' type='submit'>
+            <Link to='/'>aquí</Link>
+          </button>
+        </h6>
       </form>
     </div>
   );

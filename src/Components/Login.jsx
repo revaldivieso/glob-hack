@@ -1,5 +1,6 @@
 import React, { useCallback, useContext } from 'react';
 import { withRouter, Redirect } from 'react-router';
+import { Link } from 'react-router-dom';
 import db from './firebase';
 import { AuthContext } from './Auth';
 
@@ -35,6 +36,14 @@ const Login = ({ history }) => {
           <input name='password' type='password' placeholder='Password' />
         </label>
         <button type='submit'>Iniciar sesión</button>
+
+        {/* BOTON DE REGISTRO*/}
+        <h6>
+          Si no estas registrado ingresa{' '}
+          <button className='register' type='submit' to='/register'>
+            <Link to='/register'>aquí</Link>
+          </button>{' '}
+        </h6>
       </form>
     </div>
   );
