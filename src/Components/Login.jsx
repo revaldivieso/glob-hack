@@ -44,6 +44,12 @@ const Login = ({ history }) => {
             <Link to='/register'>aquí</Link>
           </button>{' '}
         </h6>
+
+        {/* BOTON DE INGRESO CON GOOGLE*/}
+
+        <button class='register_google' to='/' type='submit'>
+          <Link to='/'>Ingresa con Google</Link>
+        </button>
       </form>
     </div>
   );

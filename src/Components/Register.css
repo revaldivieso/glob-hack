@@ -1,0 +1,72 @@
+* {
+    background-color: #FFF0E1;
+}
+
+.register {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.register_google {
+    display: flex;
+    width: 17.625rem;
+    height: 2.0625rem;
+    border-radius: 10px;
+    margin-left: 14%;
+    font-size: 13px;
+    margin-top: 2%;
+    border: none;
+}
+
+.register_google {
+    background: #FFFFFF;
+}
+
+.return_login {
+    border: none;
+    font-style: initial;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+}
+
+.login {
+    background: #6493C6;
+    border: none;
+    color: white;
+    margin-top: 7%;
+    margin-left: 33%;
+    font-size: 13px;
+    width: 30%;
+    height: 2.5rem;
+}
+
+input.form-control {
+    background-color: white;
+    border: none;
+    margin-top: 2%;
+}
+
+.form-control {
+    text-align: justify;
+}
+
+.label {
+    display: block;
+    text-align: justify;
+    justify-content: left;
+}
+
+h5 {
+    font-size: 13px;
+    display: flex;
+    color: #453F3F;
+    margin-left: 10%;
+}
+
+h6 {
+    font-size: 11px;
+    padding-top: 0.5%;
+    padding-left: 25%;
+}

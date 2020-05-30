@@ -3,6 +3,7 @@ import { withRouter } from 'react-router';
 import { Link } from 'react-router-dom';
 import db from './firebase';
 import './Register.css';
+import { Container } from 'react-bootstrap';
 
 const Register = ({ history }) => {
   const handleRegister = useCallback(
@@ -21,28 +22,58 @@ const Register = ({ history }) => {
     [history]
   );
   return (
-    <div>
-      <h1>Registro</h1>
-      <form onSubmit={handleRegister}>
-        <label>
-          Email
-          <input name='email' type='email' placeholder='Email' />
-        </label>
-        <label>
-          Password
-          <input name='password' type='password' placeholder='Password' />
-        </label>
-        <button type='submit'>Registrarse</button>
-        {/* BOTON DE VOLVER A LOGIN*/}
+    <Container>
+      <h5>Registro</h5>
+      <form className='row' onSubmit={handleRegister}>
+        <div className='col-md-12'>
+          <label className='label'>
+            Nombre
+            <input
+              className='form-control'
+              type='tex'
+              name='name'
+              placeholder='Escribe tu pseudónimo'
+            />
+          </label>
+          <label className='label'>
+            Email
+            <input
+              className='form-control'
+              name='email'
+              type='email'
+              placeholder='Email'
+            />
+          </label>
+          <label className='label'>
+            Password
+            <input
+              className='form-control'
+              name='password'
+              type='password'
+              placeholder='Password'
+            />
+          </label>
 
-        <h6>
-          Si ya estas registrado ingresa{' '}
-          <button class='return_login' type='submit'>
-            <Link to='/'>aquí</Link>
+          {/* BOTON DE REGISTRO*/}
+          <button class='login' type='submit'>
+            Registrarse
           </button>
-        </h6>
+
+          {/* BOTON DE INGRESO CON GOOGLE*/}
+          <button class='register_google' to='/' type='submit'>
+            <Link to='/'>Registrarse con Google</Link>
+          </button>
+
+          {/* BOTON DE VOLVER A LOGIN*/}
+          <h6>
+            Si ya estas registrado ingresa{' '}
+            <button class='return_login' type='submit'>
+              <Link to='/'>aquí</Link>
+            </button>
+          </h6>
+        </div>
       </form>
-    </div>
+    </Container>
   );
 };
 
