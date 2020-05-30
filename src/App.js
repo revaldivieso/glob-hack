@@ -13,7 +13,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div>
-          <Route exact path="/welcome" component={Welcome} />
+          <Route exact path='/welcome' component={Welcome} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
           <Route exact path='/' component={Home} />
