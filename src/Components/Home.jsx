@@ -43,7 +43,7 @@ const Home = () => {
           </div>
           <div className="btns">
             <button className="symptoms">REGISTRAR SÍNTOMAS</button>
-            <button>REGISTRAR PERÍODO</button>
+            <button className="period">REGISTRAR PERÍODO</button>
           </div>
         </Col>
         </Row>
