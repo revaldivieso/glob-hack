@@ -2,81 +2,186 @@
     background-color: #FFF0E1;
 }
 
-.logo,
-.logo2 {
-    display: block;
+@media only screen and (max-width: 700px) and (min-width: 320px) {
+
+    .logo,
+    .logo2 {
+        display: block;
+    }
+
+    .logo {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    .register {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+    }
+
+    .register_google {
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 2%;
+        border: none;
+        width: 65%;
+        height: 2.5rem;
+        padding: .375rem .75rem;
+        display: block;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .register_google {
+        background: #FFFFFF;
+    }
+
+    .return_login {
+        width: 30%;
+        height: 2.5rem;
+        border: none;
+        font-style: initial;
+        font-weight: bold;
+        justify-content: left;
+        text-align: left;
+    }
+
+    .login {
+        background: #6493C6;
+        border: none;
+        color: white;
+        margin-top: 2%;
+        font-size: 1rem;
+        width: 65%;
+        height: 2.5rem;
+        border-radius: 10px;
+        padding: .375rem .75rem;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    input.form-control {
+        background-color: white;
+        border: none;
+        margin-top: 2%;
+        width: inherit;
+    }
+
+    .form-control {
+        text-align: justify;
+        height: 2.5rem;
+    }
+
+    .label {
+        display: block;
+        text-align: justify;
+        justify-content: left;
+    }
+
+    h5 {
+        font-size: 13px;
+        display: flex;
+        color: #453F3F;
+        margin-left: 10%;
+    }
+
+    h6 {
+        font-size: 11px;
+        padding-top: 0.5%;
+
+    }
 }
 
-.logo {
-    justify-content: center;
-    align-items: center;
-}
+@media (min-width: 700px) {
 
-.register {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-}
+    .logo,
+    .logo2 {
+        display: block;
+    }
 
-.register_google {
-    display: flex;
-    width: 17.625rem;
-    height: 2.0625rem;
-    border-radius: 10px;
-    margin-left: 14%;
-    font-size: 13px;
-    margin-top: 2%;
-    border: none;
-}
+    .logo {
+        justify-content: center;
+        align-items: center;
+    }
 
-.register_google {
-    background: #FFFFFF;
-}
+    .register {
+        display: flex;
+        text-align: left;
+        justify-content: left;
+    }
 
-.return_login {
-    border: none;
-    font-style: initial;
-    font-weight: bold;
-    display: flex;
-    text-align: center;
-}
+    .register_google {
+        border-radius: 10px;
+        font-size: 1rem;
+        margin-top: 2%;
+        border: none;
+        width: 30%;
+        height: 2.5rem;
+        display: block;
+        text-align: center;
+        justify-content: center;
+        padding: .375rem .75rem;
+    }
 
-.login {
-    background: #6493C6;
-    border: none;
-    color: white;
-    margin-top: 7%;
-    margin-left: 33%;
-    font-size: 13px;
-    width: 30%;
-    height: 2.5rem;
-}
+    .register_google {
+        background: #FFFFFF;
+    }
 
-input.form-control {
-    background-color: white;
-    border: none;
-    margin-top: 2%;
-}
+    .return_login {
+        width: 30%;
+        height: 2.5rem;
+        border: none;
+        font-style: initial;
+        font-weight: bold;
+        justify-content: left;
+        text-align: left;
+    }
 
-.form-control {
-    text-align: justify;
-}
+    .login {
+        background: #6493C6;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        width: 30%;
+        height: 2.5rem;
+        margin-top: 2%;
+        border-radius: 10px;
+        padding: .375rem .75rem;
+        text-align: center;
+        justify-content: center;
+    }
 
-.label {
-    display: block;
-    text-align: justify;
-    justify-content: left;
-}
+    input.form-control {
+        background-color: white;
+        border: none;
+        margin-top: 2%;
+    }
 
-h5 {
-    font-size: 13px;
-    display: flex;
-    color: #453F3F;
-    margin-left: 10%;
-}
+    .form-control {
+        text-align: justify;
+        width: 30%;
+        height: 2.5rem;
+    }
 
-h6 {
-    font-size: 11px;
-    padding-top: 0.5%;
-    padding-left: 25%;
+    .label {
+        display: block;
+        text-align: justify;
+        justify-content: left;
+    }
+
+    h5 {
+        font-size: 13px;
+        display: flex;
+        color: #453F3F;
+        margin-left: 10%;
+    }
+
+    h6 {
+        font-size: 11px;
+        padding-top: 0.5%;
+
+    }
 }
