@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom';
 import db from './firebase';
 import { AuthContext } from './Auth';
 import { Container } from 'react-bootstrap';
+import { googleLogin } from './google-auth';
 import logo from '../Asset/Images/logo.png';
 import logo2 from '../Asset/Images/logo2.png';
+import google from '../Asset/Images/icon/google.png';
 
 const Login = ({ history }) => {
   const handleLogin = useCallback(
@@ -35,21 +37,19 @@ const Login = ({ history }) => {
       <form className='row' onSubmit={handleLogin}>
         <div className='col-md-12'>
           <label className='label'>
-            Email
             <input
               className='form-control'
               name='email'
               type='email'
-              placeholder='Email'
+              placeholder='Correo electrónico'
             />
           </label>
           <label className='label'>
-            Password
             <input
               className='form-control'
               name='password'
               type='password'
-              placeholder='Password'
+              placeholder='Contraseña'
             />
           </label>
           <button class='login' type='submit'>
@@ -57,14 +57,15 @@ const Login = ({ history }) => {
           </button>
           {/* BOTON DE INGRESO CON GOOGLE*/}
 
-          <button class='register_google' to='/' type='submit'>
-            <Link to='/'>Ingresa con Google</Link>
+          <button onClick={() => googleLogin()} class='register_google'>
+            <span>Ingresa con Google</span>
+            <img src={google} className='google-icon' alt='logo de google' />
           </button>
         </div>
         {/* BOTON DE REGISTRO*/}
         <h6>
           ¿No tienes cuenta?{' '}
-          <button className='register' type='submit' to='/register'>
+          <button className='return_login' type='submit' to='/register'>
             <Link to='/register'>Registrarte</Link>
           </button>{' '}
         </h6>
