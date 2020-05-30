@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import {
   BrowserRouter as Router,
   Switch,
@@ -7,6 +8,7 @@ import {
 } from "react-router-dom";
 import { Welcome } from './Components/Welcome';
 import { Login } from './Components/Login';
+
 
 function App() {
   return (
