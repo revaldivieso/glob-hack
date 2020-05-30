@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import db from './firebase';
 import './Register.css';
 import { Container } from 'react-bootstrap';
+import logo2 from '../Asset/Images/logo2.png';
 
 const Register = ({ history }) => {
   const handleRegister = useCallback(
@@ -23,6 +24,9 @@ const Register = ({ history }) => {
   );
   return (
     <Container>
+      <header className='app_header'>
+        <img src={logo2} className='logo' alt='logo' />
+      </header>
       <h5>Registro</h5>
       <form className='row' onSubmit={handleRegister}>
         <div className='col-md-12'>
