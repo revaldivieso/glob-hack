@@ -15,10 +15,39 @@ const Home = () => {
       <header>
       <Navigation />
     </header>
-        <Row>
+    <section>
+      <Row>
         <Col>
+          <div className="week">
+            <li>L</li>
+            <li>M</li>
+            <li>W</li>
+            <li>J</li>
+            <li>V</li>
+            <li>S</li>
+            <li>D</li>
+          </div>
+          <div className="numbers">
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+            <li>31</li>
+          </div>
+          <div className="info">
+            <h3>Período</h3>
+            <h1>Faltan 6 días</h1>
+            <h4>Posibilidad de embarazo: <span>Baja</span></h4>
+          </div>
+          <div className="btns">
+            <button className="symptoms">REGISTRAR SÍNTOMAS</button>
+            <button>REGISTRAR PERÍODO</button>
+          </div>
         </Col>
         </Row>
+    </section>
         </Container>
   );
 };

@@ -16,3 +16,59 @@ body {
 .col {
     padding: 0;
 }
+
+.week, .numbers {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 20px;
+}
+
+.week li, .numbers li {
+    list-style: none;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 38px;
+}
+
+.info h3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+}
+
+.info h1 {
+    width: 206px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 41px;
+    color: #8D4D80;
+}
+
+.info h4 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #6493C6;
+}
+
+.info span {
+    color: #8D4D80;
+}
+
+.btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 245px;
+    margin-left: 75px;
+}
