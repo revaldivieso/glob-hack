@@ -1,7 +1,9 @@
 import React, { useContext } from 'react';
 import { Redirect } from 'react-router';
-import db from './firebase';
 import { AuthContext } from './Auth';
+import { Container, Row, Col } from 'react-bootstrap';
+import { Navigation } from './Navigation'
+import './Home.css';
 
 const Home = () => {
   const { currentUser } = useContext(AuthContext);
@@ -9,10 +11,15 @@ const Home = () => {
     return <Redirect to='/login' />;
   }
   return (
-    <>
-      <h1>Home</h1>
-      <button onClick={() => db.auth().signOut()}>Cerrar sesión</button>
-    </>
+    <Container fluid className="content">
+      <header>
+      <Navigation />
+    </header>
+        <Row>
+        <Col>
+        </Col>
+        </Row>
+        </Container>
   );
 };
 export default Home;
