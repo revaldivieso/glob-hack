@@ -59,12 +59,12 @@ const Sintomas = () => {
           {
             name: 'Mi pareja no me deja salir',
             classItem: 'nosalir',
-            image: nosalir
+            image: nosalir,
           },
           {
             name: 'Mi pareja no me deja hablar con nadie',
             image: callar,
-            classItem: 'callar'
+            classItem: 'callar',
           },
         ]}
       />
@@ -85,7 +85,7 @@ const Sintomas = () => {
       </button>
       {/* BOTON DE IR A SECCION E NOTICIAS*/}
       <button class='return_login' type='submit'>
-        <Link to='/sectionInfo'>Ir a seccion de noticias</Link>
+        <Link to='/info'>Ir a seccion de noticias</Link>
       </button>
     </Container>
   );
