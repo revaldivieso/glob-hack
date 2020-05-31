@@ -42,7 +42,7 @@ const Sintomas = () => {
             image: noconsent,
           },
           {
-            name: 'Sexo alto deseo sexual',
+            name: 'Alto deseo sexual',
             image: love,
             classItem: 'love',
           },

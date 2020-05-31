@@ -2,6 +2,10 @@
     color: #8D4D80;
 }
 
+header {
+    margin-bottom: 20px;
+}
+
 .p {
     color: #6493C6;
     justify-content: center;
@@ -21,4 +25,32 @@
 
 .items {
     display: block;
+}
+
+h1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+    color: #8D4D80;
+}
+
+.group-item {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.group-item p {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #6493C6;
+
 }
