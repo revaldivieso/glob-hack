@@ -1,0 +1,24 @@
+.h3 {
+    color: #8D4D80;
+}
+
+.p {
+    color: #6493C6;
+    justify-content: center;
+}
+
+.image {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    background-color: #CBE8F4;
+    background-position: center;
+}
+
+.user {
+    background-position: center;
+}
+
+.items {
+    display: block;
+}
