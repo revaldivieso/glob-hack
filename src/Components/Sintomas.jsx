@@ -59,12 +59,12 @@ const Sintomas = () => {
           {
             name: 'Mi pareja no me deja salir',
             classItem: 'nosalir',
-            image: nosalir,
+            image: nosalir
           },
           {
             name: 'Mi pareja no me deja hablar con nadie',
             image: callar,
-            classItem: 'callar',
+            classItem: 'callar'
           },
         ]}
       />
@@ -75,7 +75,7 @@ const Sintomas = () => {
           { name: 'Estoy Bien', image: bien, classItem: 'bien' },
           { name: 'Cólicos', classItem: 'colicos', image: colicos },
           { name: 'Hematomas por golpes', classItem: 'golpe', image: golpe },
-          { name: 'Heridas por agreseión', image: herida, classItem: 'herida' },
+          { name: 'Heridas por agresión', image: herida, classItem: 'herida' },
         ]}
       />
 
