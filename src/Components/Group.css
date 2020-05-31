@@ -6,3 +6,7 @@
     width: 25%;
     text-align: center;
 }
+
+.selected {
+    color: red;
+}
