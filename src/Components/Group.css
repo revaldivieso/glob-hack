@@ -1,0 +1,8 @@
+.group-items {
+    display: flex;
+}
+
+.group-item {
+    width: 25%;
+    text-align: center;
+}
