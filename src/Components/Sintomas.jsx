@@ -75,7 +75,7 @@ const Sintomas = () => {
           { name: 'Estoy Bien', image: bien, classItem: 'bien' },
           { name: 'Cólicos', classItem: 'colicos', image: colicos },
           { name: 'Hematomas por golpes', classItem: 'golpe', image: golpe },
-          { name: 'Heridas por agreseión', image: herida, classItem: 'herida' },
+          { name: 'Heridas por agresión', image: herida, classItem: 'herida' },
         ]}
       />
 
@@ -85,7 +85,7 @@ const Sintomas = () => {
       </button>
       {/* BOTON DE IR A SECCION E NOTICIAS*/}
       <button class='return_login' type='submit'>
-        <Link to='/sectionInfo'>Ir a seccion de noticias</Link>
+        <Link to='/info'>Ir a seccion de noticias</Link>
       </button>
     </Container>
   );

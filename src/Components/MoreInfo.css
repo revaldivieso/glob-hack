@@ -1,0 +1,27 @@
+.section-btns {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.section-btns button {
+    border: none;
+}
+
+.info {
+    margin-bottom: 32px;
+}
+
+.info p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    color: #525252;
+}
+
+.help-btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+

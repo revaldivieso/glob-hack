@@ -6,7 +6,8 @@ import Home from './Components/Home';
 import Login from './Components/Login';
 import Register from './Components/Register';
 import Sintomas from './Components/Sintomas';
-import SectionInfo from './Components/SectionInfo';
+import MoreInfo from './Components/MoreInfo';
+
 import { AuthProvider } from './Components/Auth';
 
 function App() {
@@ -14,7 +15,7 @@ function App() {
     <AuthProvider>
       <Router>
         <div>
-          <Route path='/sectionInfo' component={SectionInfo} />
+          <Route path='/info' component={MoreInfo} />
           <Route path='/sintomas' component={Sintomas} />
           <Route path='/login' component={Login} />
           <Route path='/register' component={Register} />
