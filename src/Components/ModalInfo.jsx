@@ -1,5 +1,5 @@
 import React from 'react';
-//import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router';
 import 'antd/dist/antd.css';
 import { Modal, Button } from 'antd';
 //import logo2 from '../Asset/Images/logo2.png';
@@ -10,6 +10,14 @@ const ModalInfo = (props) => {
 
   const handleCancel = () => setShow(false);
   const handleOk = () => setShow(true);
+  const change = ({ history }) => {
+    try {
+      props.history.push('/info');
+    } catch (error) {
+      alert(error);
+    }
+  };
+
   React.useEffect(() => {
     setShow(props.show);
   }, [props.show]);
@@ -19,6 +27,7 @@ const ModalInfo = (props) => {
       <Modal
         title='Hola!'
         visible={show}
+        onOk={change}
         onCancel={handleCancel}
         okText='Sí'
         cancelText='NO'>
@@ -31,4 +40,4 @@ const ModalInfo = (props) => {
   );
 };
 
-export default ModalInfo;
+export default withRouter(ModalInfo);
