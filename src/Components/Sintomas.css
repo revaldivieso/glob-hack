@@ -25,15 +25,12 @@ h1 {
     color: #8D4D80;
 }
 
-.group-item {
-    width: 25%;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.callar {
+    background-color: blue;
+    text-decoration: underline;
 }
 
-.group-item p {
+/* .group-item p {
     font-weight: 300;
     font-size: 12px;
     line-height: 14px;
@@ -42,4 +39,4 @@ h1 {
     text-align: center;
     color: #6493C6;
 
-}
+} */
