@@ -23,6 +23,9 @@ const Sintomas = () => {
       <header>
         <Navigation />
       </header>
+      <p>
+        Aquí podrás seleccionar los items con los que te sientas identificada
+      </p>
       <Group
         name='Relaciones y deseo sexual'
         items={[
