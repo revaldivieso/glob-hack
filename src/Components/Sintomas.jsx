@@ -83,6 +83,10 @@ const Sintomas = () => {
       <button class='return_login' type='submit'>
         <Link to='/'>Regresar al Home</Link>
       </button>
+      {/* BOTON DE IR A SECCION E NOTICIAS*/}
+      <button class='return_login' type='submit'>
+        <Link to='/sectionInfo'>Ir a seccion de noticias</Link>
+      </button>
     </Container>
   );
 };

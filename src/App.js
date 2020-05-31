@@ -7,6 +7,7 @@ import Login from './Components/Login';
 import Register from './Components/Register';
 import Sintomas from './Components/Sintomas';
 import MoreInfo from './Components/MoreInfo';
+
 import { AuthProvider } from './Components/Auth';
 
 function App() {
